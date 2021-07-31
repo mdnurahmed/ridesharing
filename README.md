@@ -19,9 +19,9 @@ go test ./...
 ## Using Docker 
 ```
 docker-compose -f rideshare.yaml up --build
-docker run -it rideshare_rideshare /bin/sh
+docker run -it ridesharing_rideshare /bin/sh
 go test ./... 
-go run main.go -2 1 3 0
+go run main.go
 exit
 docker-compose -f rideshare.yaml down
 ```
