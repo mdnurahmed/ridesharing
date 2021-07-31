@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  rideshare:
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: .
