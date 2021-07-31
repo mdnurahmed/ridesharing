@@ -14,14 +14,13 @@ type UserController struct {
 	userRepo repositories.IUserRepo
 }
 
-func NewInstanceOfUserController(userRepo repositories.IUserRepo)  UserController {
-	return UserController{userRepo : userRepo }
+func NewInstanceOfUserController(userRepo repositories.IUserRepo) UserController {
+	return UserController{userRepo: userRepo}
 }
 
 func (u *UserController) AddUser(user models.User) error {
 	return u.userRepo.AddUser(user)
 }
-
 
 func (u *UserController) AddVechile(vechile models.Vechile) error {
 	return u.userRepo.AddVechile(vechile)
